@@ -1,0 +1,7 @@
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\bin\Debug\BusninessLayer.dll
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\bin\Debug\BusninessLayer.pdb
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\bin\Debug\DbLayer.dll
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\bin\Debug\DbLayer.pdb
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\obj\Debug\BusninessLayer.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\obj\Debug\BusninessLayer.dll
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\BusninessLayer\obj\Debug\BusninessLayer.pdb

@@ -1,0 +1,5 @@
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\DbLayer\bin\Debug\DbLayer.dll
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\DbLayer\bin\Debug\DbLayer.pdb
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\DbLayer\obj\Debug\DbLayer.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\DbLayer\obj\Debug\DbLayer.dll
+d:\documents\visual studio 2012\Projects\ComputerServiceShop\ComputerServiceShop\DbLayer\obj\Debug\DbLayer.pdb

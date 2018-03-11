@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Masterpage.master.cs" Inherits="ComputerServiceShop.Masterpage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Ace Computer Repairs</title>
+
+    <script type="text/javascript" src="JavaScript/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript">
+        function mainmenu() {
+            $(" #nav ul").css({ display: "none" }); //Opera Fix
+
+            $(" #nav li").hover(function () {
+                $(this).find('ul:first').css({ visibility: "visible", display: "none" }).show(400);
+            }
+            , function () {
+                $(this).find('ul:first').css({ visibility: "hidden" });
+            });
+        }
+
+        $(document).ready(function () {
+            mainmenu();
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="~/Styles/StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="banner">
+
+        </div>
+
+        <div id="navigation">
+            <ul id="nav">
+                <li><a href="Home.aspx">Home</a></li>
+                <li><a href="Services.aspx">Services</a>                  
+                </li>
+                <%--<li><a href="~/Pages/TechDetails.aspx">Tech Details</a></li>--%>
+                <li><a href="/Pages/Appointment.aspx">Book Appointment</a></li>
+                <!-- <li><a href="#">Shop</a></li> -->
+                <li><a href="About.aspx">About</a></li>
+                <li><a href="Account/Admin.aspx">Admin</a></li>
+                <li><a id="A1" href="~/Pages/Appointment_Overview.aspx" runat="server">Management</a>
+
+            <%--<ul>
+                <li><a id="A2" href="~/Pages/Appointment_Overview.aspx" runat="server">Appointment</a></li>
+                <li><a id="A3" href="~/Pages/Account/Admin.aspx" runat="server">Users</a></li>
+            </ul>--%>
+                </li>
+                </ul>
+            <div id="Login" align="right">
+                <asp:Label ID="lblLogin" runat="server" ForeColor="White" Text=""></asp:Label>
+                <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" OnClick="LinkButton1_Click">LinkButton</asp:LinkButton>
+            </div>
+        </div>
+        <div>
+            <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#E3EAEB" />
+                <DynamicSelectedStyle BackColor="#1C5E55" />
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Pages/TechDetails.aspx" Text="Update Information" Value="Update Information"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/Pages/TechStatus.aspx" Text="Repair Status" Value="Repair Status"></asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#1C5E55" />
+            </asp:Menu>
+        </div>
+        <div id="content_area">
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p>
+                   </p>
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+      
+
+        <div id="footer">
+            <p style="color:white">&copy; Ace Computer Repairs. All Rights Reserved.</p>
+        </div>
+        
+    </div>
+    </form>
+</body>
+</html>
